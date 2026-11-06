@@ -1,4 +1,4 @@
-const INSTRUCTIONS = ["L", "R", "M"] as const;
+export const INSTRUCTIONS = ["L", "R", "M"] as const;
 export type Instruction = (typeof INSTRUCTIONS)[number]; // "L" | "R" | "M"
 
 const COMPASSDIRECTIONS = ["N","S","W","E"] as const;
