@@ -1,5 +1,6 @@
 export const INSTRUCTIONS = ["L", "R", "M"] as const;
 export type Instruction = (typeof INSTRUCTIONS)[number]; // "L" | "R" | "M"
+export type Rotation = Exclude<Instruction, "M">; // "L" | "R"
 
 export const COMPASSDIRECTIONS = ["N","S","W","E"] as const;
 export type CompassDirection = (typeof COMPASSDIRECTIONS)[number];
