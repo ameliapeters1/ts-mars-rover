@@ -1,7 +1,7 @@
 export const INSTRUCTIONS = ["L", "R", "M"] as const;
 export type Instruction = (typeof INSTRUCTIONS)[number]; // "L" | "R" | "M"
 
-const COMPASSDIRECTIONS = ["N","S","W","E"] as const;
+export const COMPASSDIRECTIONS = ["N","S","W","E"] as const;
 export type CompassDirection = (typeof COMPASSDIRECTIONS)[number];
 
 export interface Position {
